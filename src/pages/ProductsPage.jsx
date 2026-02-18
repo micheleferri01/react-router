@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 export default function ProductsPage() {
 
     const [products, setProducts] = useState([])
+    const [error, setError] = useState(false)
 
     useEffect(() => {
         axios.get("https://fakestoreapi.com/products")
@@ -11,11 +12,15 @@ export default function ProductsPage() {
                 setProducts(res.data)
                 console.log(res.data)
             })
+            .catch((err) => (setError(true)));
     }, [])
 
     return (
         <>
-            <div className="container-fluid py-4 bg-orange">
+        {error && <>
+        <div className="alert alert-danger my-3 text-center">Si è verificato un error durante il caricamento. Riprova.</div>
+        </>}
+            {error === false && <div className="container-fluid py-4 bg-orange">
                 <div className="row g-3">
                     {products.map((product) => (
                         <div key={product.id} className="col-3">
@@ -34,7 +39,7 @@ export default function ProductsPage() {
 
                         </div>))}
                 </div>
-            </div>
+            </div>}
         </>
 
     )
