@@ -5,7 +5,9 @@ export default function DefaultLayout() {
     return (
         <>
             <Navbar />
-            <Outlet />
+            <main className="bg-orange">
+                <Outlet />
+            </main>
         </>
     )
 }
