@@ -3,3 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.bg-orange{
+  background-color: rgba(246, 145, 5, 0.748);
+}
