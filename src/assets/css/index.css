@@ -7,3 +7,23 @@
 .bg-orange{
   background-color: rgba(246, 145, 5, 0.748);
 }
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.productCard-image{
+  width: 100px;
+  height: 150px;
+}
+
+.card-spacing{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.star-color{
+  color: rgb(213, 182, 3);
+}
