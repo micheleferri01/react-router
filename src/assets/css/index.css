@@ -21,3 +21,8 @@ img{
 .star-color{
   color: rgb(213, 182, 3);
 }
+
+.card:hover{
+  scale: 1.08;
+  z-index: 1;
+}
