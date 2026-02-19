@@ -41,7 +41,7 @@ export default function ProductDetailsPage() {
         error ? navigate('/products') :  <>
             <div className="container py-5">
                 <div className="bg-white p-4 rounded-5">
-                    <div className="d-flex gap-5">
+                    <div className="d-flex flex-column-reverse flex-md-row gap-5">
                         <div>
                             <h1 className="mb-3">{product.title}</h1>
 
