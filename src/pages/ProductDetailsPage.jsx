@@ -16,7 +16,11 @@ export default function ProductDetailsPage() {
 
     useEffect(fetchProduct, []);
 
-    if(!product) return <h1>Loading...</h1>
+    if (!product) return (
+        <div className="loading-screen">
+            <h1>Loading...</h1>
+        </div>
+        )
 
     return (
         <>

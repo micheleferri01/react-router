@@ -30,3 +30,13 @@ img{
 .productDetailImage{
   min-width: 250px;
 }
+
+.loading-screen{
+  position: fixed;
+  inset: 0;
+  background: #00000083;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
