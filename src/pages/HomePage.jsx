@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function HomePage() {
     return (
 
-        <section className="container py-4">
+        <section className="container p-4 bg-white my-4 rounded-5">
             <h1>Benvenuto nel nostro store online</h1>
 
             <p className="fs-5">Siamo felici di averti qui! Nel nostro shop troverai prodotti selezionati con cura, qualità garantita e offerte pensate apposta per te.</p>

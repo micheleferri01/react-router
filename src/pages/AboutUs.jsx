@@ -2,7 +2,7 @@
 export default function AboutUs() {
     return (
         <>
-            <section className="container py-4" >
+            <section className="container p-4 my-4 bg-white rounded-5" >
                 <h1>Chi siamo</h1>
                 <p className="fs-5">
                     Siamo un team di professionisti uniti dalla passione per lo shopping online semplice, sicuro e conveniente. Il nostro obiettivo è offrire un'esperienza d'acquisto piacevole, con prodotti selezionati con cura e un servizio clienti sempre attento alle tue esigenze.
