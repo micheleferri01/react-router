@@ -26,3 +26,7 @@ img{
   scale: 1.08;
   z-index: 1;
 }
+
+.productDetailImage{
+  min-width: 250px;
+}
